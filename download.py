@@ -26,7 +26,6 @@ import subprocess
 import hashlib
 import re
 import shlex
-import wget
 import urllib3
 import shutil
 
