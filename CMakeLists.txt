@@ -4,6 +4,5 @@ cmake_minimum_required (VERSION 2.8.8) # OBJECT libraries require 2.8.8
 
 set(PERL_BIN_LIB_INSTALL_DIR /usr/bin/lib/ CACHE STRING "PERL_BIN_LIB_INSTALL_DIR install location")
 
-install(CODE "execute_process(COMMAND python ${PROJECT_SOURCE_DIR}/download.py)")
 install(PROGRAMS ${PROJECT_SOURCE_DIR}/clone_archive/diff-so-fancy TYPE BIN)
 install(FILES ${PROJECT_SOURCE_DIR}/clone_archive/lib/DiffHighlight.pm DESTINATION ${PERL_BIN_LIB_INSTALL_DIR})
